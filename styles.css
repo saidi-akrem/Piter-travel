@@ -1,0 +1,265 @@
+body{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header{
+
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.404);
+
+}
+
+.container{
+
+  width: 1280px;
+  margin: auto;
+
+}
+
+.nav_checkbox{
+
+  display: grid;
+  font-family: 'Roboto', sans-serif;
+
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding: 10px 0px;
+
+}
+
+.logo{
+
+  text-decoration: none;
+  color: white;
+  padding-left: 10px;
+
+}
+
+.tab-nav{
+
+  outline: none;
+  display: none;
+
+}
+
+.label{
+
+  display: none;
+  color: white;
+
+}
+
+.lablabi{
+
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin-top: 5px;
+
+}
+
+.content_nav{
+
+  grid-column: 3;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+.content_nav li{
+
+  display: inline-block;
+  padding-right: 10px;
+
+}
+
+.content_nav li a{
+
+  text-decoration: none;
+  color: white;
+  position: relative;
+
+}
+
+.content_nav li a::after{
+
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform-origin: right;
+  transform: scale(0, 1);
+  transition: transform ease-in-out 0.5s;
+
+}
+
+.content_nav li a:hover::after{
+
+  transform: scale(1, 1);
+
+}
+
+.content_section1{
+
+  height: 120vh;
+  background-image: url(./img/retina-vintage-wallpaper-fullscreen.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+
+}
+.content_section2{
+
+  height: 120vh;
+  background-image: url(./img/saint-petersburg-city-russia-view-2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+.content_section3{
+
+  height: 120vh;
+  background-image: url(./img/saint-petersburg-city-russia-view-5.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.content_section4{
+
+  height: 120vh;
+  background-image: url(./img/saint-petersburg-city-russia-view-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+
+.content_section5{
+
+  height: 120vh;
+  background-image: url(./img/saint-petersburg-city-russia-view-4.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+}
+.col-12,.mb-10,.mb-11,.col-14, .col-15 {
+color:white;
+}
+.col-13, .mb-4 {
+  color:black;
+
+  }
+
+
+
+@media screen and (max-width: 1280px){
+
+  .container{
+
+      width: 100%;
+
+  }
+
+}
+
+@media screen and (max-width: 770px){
+
+  .label{
+
+      display: grid;
+      cursor: pointer;
+      grid-column: 3;
+      padding-right: 10px;
+
+  }
+
+  .content_nav{
+
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-column: 1/4;
+      text-align: center;
+      max-height: 0;
+      overflow: hidden;
+      transition: all ease-in-out 0.6s;
+
+  }
+
+  .nav_checkbox input:checked ~ .content_nav{
+
+      max-height: 500px;
+
+  }
+
+  .content_nav li{
+
+      padding: 15px 0px;
+
+  }
+
+
+}
+
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container1 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
